@@ -32,9 +32,9 @@ function setup() {
   World.add(world,player)
 
  // playerArcher = new ( 340, playerBase.position.y - 112, 120, 120);
-  //playerArcher = new PlayerArcher( 340, playerBase.position.y - 112, 120, 120);
+  playerArcher = new PlayerArcher( 340, playerBase.position.y - 112, 120, 120);
  // playerArcher =  PlayerArcher( 340, playerBase.position.y - 112, 120, 120);
-  playerArcher = new PlayerArcher( );
+  //playerArcher = new PlayerArcher( );
 
 }
 
@@ -56,4 +56,6 @@ function draw() {
   textAlign("center");
   textSize(40);
   text("EPIC ARCHERY", width / 2, 100);
+
+  drawSprites();
 }
